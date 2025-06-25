@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 import '../models/bird_analysis.dart';
 import '../models/wildlife_rehabber.dart';
 import '../services/rehabber_service.dart';

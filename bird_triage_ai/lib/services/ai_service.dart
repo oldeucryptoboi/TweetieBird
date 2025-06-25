@@ -1,11 +1,7 @@
-import 'dart:convert';
 import 'dart:io';
-import 'package:http/http.dart' as http;
 import '../models/bird_analysis.dart';
 
 class AIService {
-  static const String _baseUrl =
-      'https://api.birdtriage.ai'; // Replace with actual API endpoint
 
   // Mock AI analysis for development
   static Future<BirdAnalysis> analyzeBirdImage(
