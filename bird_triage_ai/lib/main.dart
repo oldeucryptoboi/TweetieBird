@@ -32,7 +32,7 @@ class BirdTriageApp extends StatelessWidget {
             ),
           ),
         ),
-        cardThemeData
+        cardTheme: CardThemeData(
           elevation: 2,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),

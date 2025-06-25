@@ -28,5 +28,11 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs access to camera to take photos of birds for analysis.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app needs access to photo library to select bird photos for analysis.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>This app needs location access to find nearby wildlife rehabilitators.</string>
 </dict>
 </plist>

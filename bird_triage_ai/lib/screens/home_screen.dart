@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import '../models/bird_analysis.dart';
@@ -42,6 +43,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _pickImage(ImageSource source) async {
     try {
+      // Check if camera is supported on current platform
+      if (source == ImageSource.camera && Platform.isMacOS) {
+        _showErrorSnackBar('Camera not supported on macOS. Please use gallery instead.');
+        return;
+      }
+
       final picker = ImagePicker();
       final pickedFile = await picker.pickImage(
         source: source,
