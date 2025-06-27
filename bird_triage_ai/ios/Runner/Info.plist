@@ -45,5 +45,21 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+    <key>NSCameraUsageDescription</key>
+    <string>This app needs camera access to take photos of birds for AI analysis and rescue triage.</string>
+    
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>This app needs photo library access to select bird photos for AI analysis and rescue triage.</string>
+    
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs location access to find nearby wildlife rehabilitation centers.</string>
+
+	<key>NSLocalNetworkUsageDescription</key>
+    <string>This app needs access to the local network for debugging and communication.</string>
+    
+	<key>NSBonjourServices</key>
+    <array>
+        <string>_dartobservatory._tcp</string>
+    </array>
 </dict>
 </plist>
